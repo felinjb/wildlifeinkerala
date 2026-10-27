@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wildlife in Kerala | Wildlife routes through South India</title>
+  <meta name="description" content="Four wildlife routes of 11 to 13 nights across Kerala, Tamil Nadu and Karnataka: Thattekkad, Munnar, Thekkady, Wayanad, Kabini, Chinnar and the backwaters. Message us your dates." />
+  <meta property="og:title" content="Wildlife in Kerala" />
+  <meta property="og:description" content="Four wildlife routes through the forests, hills and backwaters of South India." />
+  <meta property="og:image" content="https://wildlifeinkerala.com/images/hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#10231A" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2310231A%22/><path d=%22M15 72 L40 38 L55 58 L68 42 L88 72 Z%22 fill=%22%23D9961F%22/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="wordmark">Wildlife in Kerala</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="#routes">Routes</a>
+        <a href="#map">Places</a>
+        <a href="#wildlife">Wildlife</a>
+        <a href="#faq">Questions</a>
+        <a href="#contact" class="btn btn-sm">Plan my trip</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <img class="hero-bg" src="images/hero.jpg" alt="" fetchpriority="high" onerror="this.remove()" />
+      <div class="wrap hero-inner">
+        <p class="kicker">Wildlife tours · Kerala · Tamil Nadu · Karnataka</p>
+        <h1>Forests, hills and backwaters. Four wildlife routes through South India.</h1>
+        <p class="lead" id="heroLead">Routes of 11 to 13 nights. Pick one, or tell us your dates and we will adjust it.</p>
+        <div class="actions" id="heroActions">
+          <a href="#routes" class="btn">See the four routes</a>
+          <a href="#contact" class="btn btn-ghost" id="heroSecondary">Plan my trip</a>
+        </div>
+        <p class="hero-note">These are wild animals. We tell you what is likely, what is possible and when, and we never promise a sighting.</p>
+      </div>
+    </section>
+
+    <!-- ROUTES -->
+    <section class="block" id="routes">
+      <div class="wrap">
+        <header class="block-head">
+          <p class="label">The routes</p>
+          <h2>Compare the four routes</h2>
+          <p>The bar under each title shows the trip. Each block is one stop, and its length is the number of nights there. Open a route for its map and stop-by-stop plan.</p>
+        </header>
+        <ul class="cards" id="routeCards"></ul>
+        <ul class="legend" id="legend" aria-label="Colour key"></ul>
+      </div>
+    </section>
+
+    <!-- MAP + PLACES -->
+    <section class="block block-paper" id="map">
+      <div class="wrap map-grid">
+        <div class="map-box" id="overviewMap"></div>
+        <div>
+          <header class="block-head">
+            <p class="label">Where we go</p>
+            <h2>Fourteen stops across three states</h2>
+            <p>Positions are approximate. The routes link these stops in different orders.</p>
+          </header>
+          <div id="placeIndex"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WILDLIFE -->
+    <section class="block" id="wildlife">
+      <div class="wrap">
+        <header class="block-head">
+          <p class="label">The wildlife</p>
+          <h2>What you might see</h2>
+          <p>These are animals people look for on these routes. Some are easy to find and some are rare. Seasons and park rules change what is possible, so tell us your dates and we will say what to expect.</p>
+        </header>
+        <ul class="species" id="speciesGrid"></ul>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS (a real sequence) -->
+    <section class="block block-forest" id="how">
+      <div class="wrap">
+        <header class="block-head">
+          <p class="label">How it works</p>
+          <h2>From first message to first safari</h2>
+        </header>
+        <ol class="steps">
+          <li><h3>Choose a route</h3><p>Pick one of the four, or describe the places and animals you want to see.</p></li>
+          <li><h3>Send your dates</h3><p>Tell us the month, how many people are coming and anything we should know.</p></li>
+          <li><h3>Get a plan and a price</h3><p>We reply with the stops, stays and cost for your dates.</p></li>
+          <li><h3>Adjust until it fits</h3><p>Add a night, swap a stop or change the pace. Then you confirm.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="block" id="about">
+      <div class="wrap about">
+        <div class="about-copy">
+          <p class="label">About us</p>
+          <h2>A new company, built around the forests of the south</h2>
+          <p>Wildlife in Kerala plans wildlife and nature routes across Kerala and the neighbouring parts of Tamil Nadu and Karnataka. Every route can be shortened, extended or mixed with another.</p>
+          <p>We are new, so there are no reviews to show yet. Instead we put the facts up front: the nights at each stop, what is likely to be seen, and a plain answer when you ask about price, terms or sightings.</p>
+          <ul class="team" id="team"></ul>
+        </div>
+        <figure class="about-img" hidden><img src="images/about.jpg" alt="The Wildlife in Kerala team on a trip" onload="this.closest('.about-img').hidden=false" onerror="this.closest('.about-img').remove()" /></figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block block-paper" id="faq">
+      <div class="wrap narrow">
+        <header class="block-head">
+          <p class="label">Questions</p>
+          <h2>Good to know</h2>
+        </header>
+        <details><summary>Will I see a tiger?</summary><p>Maybe, but probably not. Tigers are rare and shy, and no one can promise a sighting. Elephants, gaur, birds, tahr and monkeys are more likely on these routes. We plan enough time in the best parks to give you a fair chance.</p></details>
+        <details><summary>When is the best time to go?</summary><p>It depends on the park and the animals you want to see. Some parks close in the monsoon or during breeding seasons. Tell us your month and we will say what to expect.</p></details>
+        <details><summary>Can I change a route?</summary><p>Yes. Nights, stays and activities can be changed, and stops can be moved between routes.</p></details>
+        <details><summary>What does it cost?</summary><p>The price depends on group size, season, stays and vehicle. Message us with your dates and number of people and we reply with a quote.</p></details>
+        <details><summary>How do I book?</summary><p>Send an enquiry on WhatsApp or with the form below. We reply with a plan and a price. Nothing is charged until you confirm.</p></details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="block block-forest" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="label">Plan my trip</p>
+          <h2>Tell us when you want to go</h2>
+          <p>Choose a route or describe your own. We reply with a plan and a price.</p>
+          <ul class="contact-list" id="contactList"></ul>
+        </div>
+        <form id="enquiryForm" class="form" novalidate>
+          <div class="row">
+            <label for="f-name">Name
+              <input id="f-name" name="fullName" required autocomplete="name" aria-describedby="h-name err-fullName" />
+              <span class="hint" id="h-name">So we know who we are replying to.</span>
+              <span class="err" id="err-fullName"></span>
+            </label>
+            <label for="f-phone">Phone or WhatsApp number
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" required autocomplete="tel" aria-describedby="h-phone err-phone" />
+              <span class="hint" id="h-phone">We reply on this number.</span>
+              <span class="err" id="err-phone"></span>
+            </label>
+          </div>
+          <div class="row">
+            <label for="f-route">Route
+              <select id="f-route" name="route"><option value="My own route">My own route</option></select>
+            </label>
+            <label for="f-month">Month of travel
+              <select id="f-month" name="month"><option value="Not sure yet">Not sure yet</option></select>
+            </label>
+          </div>
+          <div class="row">
+            <label for="f-people">Number of travellers
+              <input id="f-people" name="travellers" type="number" min="1" value="2" inputmode="numeric" />
+            </label>
+            <label for="f-email">Email (optional)
+              <input id="f-email" name="email" type="email" autocomplete="email" />
+            </label>
+          </div>
+          <label for="f-notes">What do you want to see?
+            <textarea id="f-notes" name="notes" rows="4"></textarea>
+            <span class="hint">Animals, birds, pace, type of stay, anything we should know.</span>
+          </label>
+          <div class="actions">
+            <button class="btn" type="submit" id="submitBtn">Send on WhatsApp</button>
+            <a class="btn btn-outline" id="emailBtn" href="#">Email instead</a>
+          </div>
+          <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a href="index.html" class="wordmark">Wildlife in Kerala</a>
+        <p id="footAddress">Kerala, India</p>
+      </div>
+      <nav aria-label="Footer"><a href="#routes">Routes</a><a href="#map">Places</a><a href="#wildlife">Wildlife</a><a href="#contact">Contact</a></nav>
+      <details class="credits" id="credits" hidden><summary>Photo credits</summary><ul id="creditsList"></ul></details>
+      <p class="copy">© <span id="year"></span> wildlifeinkerala.com</p>
+    </div>
+  </footer>
+
+  <noscript><p class="noscript">This site needs JavaScript to show the routes. Please email info@wildlifeinkerala.com to plan your trip.</p></noscript>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
