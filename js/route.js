@@ -143,7 +143,8 @@ $("#routeRoot").innerHTML = `
 const enquireBtn = `<a class="btn" href="${enquire}">Enquire about this route</a>`;
 const waBtn = whatsappReady
   ? `<a class="btn btn-wa" href="${waLink(waText)}" target="_blank" rel="noopener">${WA_ICON}WhatsApp us</a>` : "";
-$("#ctaActions").innerHTML = waBtn + enquireBtn.replace('class="btn"', 'class="btn btn-ghost"');
+$("#ctaActions").innerHTML = waBtn + enquireBtn.replace('class="btn"', 'class="btn btn-ghost"') +
+  `<a class="btn btn-ghost" href="index.html?load=${num}#build">Customise this route</a>`;
 $("#stickyActions").innerHTML = (waBtn || "") + `<a class="btn btn-sm" href="${enquire}">Enquire</a>`;
 
 /* ---------- Stops: open on wide screens, closed on phones ---------- */
