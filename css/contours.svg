@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-opacity=".09">
+  <defs>
+    <path id="b" d="M600,120 C760,100 900,180 940,300 C985,430 900,560 760,620 C620,680 430,660 330,560 C230,460 240,300 340,220 C410,160 500,130 600,120 Z"/>
+    <path id="c" d="M300,420 C380,350 520,380 560,470 C600,560 520,660 410,670 C300,680 220,600 230,520 C236,470 260,445 300,420 Z"/>
+  </defs>
+  <g transform="translate(260 40)">
+    <use href="#b" transform="translate(600 390) scale(1.35) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(1.2) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(1.05) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(.9) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(.75) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(.6) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(.45) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(.3) translate(-600 -390)"/>
+    <use href="#b" transform="translate(600 390) scale(.16) translate(-600 -390)"/>
+  </g>
+  <g transform="translate(-220 -60)">
+    <use href="#c" transform="translate(400 550) scale(1.5) translate(-400 -550)"/>
+    <use href="#c" transform="translate(400 550) scale(1.25) translate(-400 -550)"/>
+    <use href="#c" transform="translate(400 550) scale(1) translate(-400 -550)"/>
+    <use href="#c" transform="translate(400 550) scale(.75) translate(-400 -550)"/>
+    <use href="#c" transform="translate(400 550) scale(.5) translate(-400 -550)"/>
+    <use href="#c" transform="translate(400 550) scale(.25) translate(-400 -550)"/>
+  </g>
+</svg>
