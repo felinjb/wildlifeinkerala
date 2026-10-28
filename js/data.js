@@ -100,3 +100,17 @@ const TEAM = [];
    For any photo you did not take. Example:
    { file: "tiger", by: "Photographer name", source: "Wikimedia Commons", licence: "CC BY 4.0" } */
 const CREDITS = [];
+
+/* ---------- MAP BACKDROP (schematic, for the route builder) ----------
+   COAST: the west coast from north to south as [lat, lon].
+   STATE_LABELS: faint state names placed on the map.                  */
+const COAST = [
+  [13.34, 74.74], [12.87, 74.83], [12.50, 74.97], [12.25, 75.06], [11.87, 75.35],
+  [11.25, 75.76], [10.78, 75.91], [10.55, 76.02], [9.97, 76.22], [9.60, 76.27],
+  [9.20, 76.40], [8.88, 76.56], [8.50, 76.92], [8.08, 77.54]
+];
+const STATE_LABELS = [
+  { t: "KARNATAKA",  lat: 12.85, lon: 76.0 },
+  { t: "KERALA",     lat: 10.95, lon: 76.45 },
+  { t: "TAMIL NADU", lat: 10.9,  lon: 77.6 }
+];
