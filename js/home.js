@@ -41,8 +41,7 @@ $("#routeCards").innerHTML = ROUTES.map((r, i) => {
 $("#legend").innerHTML = Object.entries(TERRAINS).map(([k, label]) =>
   `<li><i class="t-${k}"></i>${esc(label)}</li>`).join("");
 
-/* ---------- Overview map and place index ---------- */
-$("#overviewMap").innerHTML = mapSVG(Object.keys(DESTINATIONS), { numbered: false, route: false, H: 600, padX: 116 });
+/* ---------- Place index ---------- */
 
 $("#placeIndex").innerHTML = Object.entries(TERRAINS).map(([terrain, label]) => {
   const items = Object.entries(DESTINATIONS).filter(([, d]) => d.terrain === terrain).map(([key, d]) => `
