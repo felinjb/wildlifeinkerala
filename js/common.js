@@ -32,10 +32,9 @@ function strip(route, { compact = false } = {}) {
   return `<ol class="strip${compact ? " strip-compact" : ""}" style="--total:${total}" aria-label="Nights at each stop">${segs}</ol>`;
 }
 
-/* ---------- Map: stops placed by latitude and longitude ----------
-   Straight lines show the order of stops, not roads. */
-function mapSVG(keys, { numbered = true, route = true, W = 480, H = 560, padX = 118, padY = 54 } = {}) {
-  const pts = keys.map((k) => ({ key: k, ...DESTINATIONS[k] }));
+/* ---------- Map projection: turns latitude and longitude into map coordinates ---------- */
+function projector(keys, { W = 480, H = 560, padX = 118, padY = 54 } = {}) {
+  const pts = keys.map((k) => DESTINATIONS[k]);
   const lats = pts.map((p) => p.lat), lons = pts.map((p) => p.lon);
   const minLat = Math.min(...lats), maxLat = Math.max(...lats);
   const minLon = Math.min(...lons), maxLon = Math.max(...lons);
@@ -43,8 +42,14 @@ function mapSVG(keys, { numbered = true, route = true, W = 480, H = 560, padX = 
   const spanX = Math.max((maxLon - minLon) * kx, 0.05), spanY = Math.max(maxLat - minLat, 0.05);
   const s = Math.min((W - 2 * padX) / spanX, (H - 2 * padY) / spanY);
   const ox = (W - spanX * s) / 2, oy = (H - spanY * s) / 2;
-  const X = (lon) => ox + (lon - minLon) * kx * s;
-  const Y = (lat) => oy + (maxLat - lat) * s;
+  return { W, H, X: (lon) => ox + (lon - minLon) * kx * s, Y: (lat) => oy + (maxLat - lat) * s };
+}
+
+/* ---------- Map of a route: stops placed by latitude and longitude ----------
+   Straight lines show the order of stops, not roads. */
+function mapSVG(keys, { numbered = true, route = true, W = 480, H = 560, padX = 118, padY = 54 } = {}) {
+  const pts = keys.map((k) => ({ key: k, ...DESTINATIONS[k] }));
+  const { X, Y } = projector(keys, { W, H, padX, padY });
   const r = numbered ? 14 : 6;
 
   const line = route && pts.length > 1
